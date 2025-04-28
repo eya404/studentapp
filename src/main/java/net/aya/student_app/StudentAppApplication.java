@@ -19,9 +19,9 @@ public class StudentAppApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        productRepository.save(new Product(null, "Laptop", 1000, 10));
-//        productRepository.save(new Product(null, "Tablet", 500, 10));
-//        productRepository.save(new Product(null, "Smartphone", 200, 10));
+       productRepository.save(new Product(null, "Laptop", 1000, 10));
+       productRepository.save(new Product(null, "Tablet", 500, 10));
+       productRepository.save(new Product(null, "Smartphone", 200, 10));
         List<Product> products = productRepository.findAll();
         products.forEach(p->{
             System.out.println(p.toString());
